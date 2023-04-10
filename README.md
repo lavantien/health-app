@@ -4,7 +4,7 @@
 
 ### Requirements Breakdown
 
-- Time: 16 hours
+- Time: 16 hours (8 Planning + 8 Implementing)
 - No Authentication and Authorization of Users
 - No unit tests
 - In-memory database with mockup data
@@ -12,7 +12,7 @@
 - Each endpoint only needs Create, Read One, and Read All actions
 - But due to time limit only the User endpoints will be implemented
 - Static Landing Page (About)
-- Input Page (Register)
+- ~~Input Page (Register)~~
 - Home Page display all registered users
 
 ### Business Decisions
@@ -20,7 +20,7 @@
 - Single Rest API with Mutex and Caching, without external libraries; exposes multiple endpoints
 - Simple backend database layer to communicate with external database
 - Simple SPA frontend with routings consume the backend's endpoints and render them appropriately according to the Figma designs
-- All functionalities and endpoints should be tested
+- ~~All functionalities and endpoints should be tested~~
 
 ### Technical Decisions
 
