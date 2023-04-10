@@ -30,11 +30,15 @@
 
 ### Demo Instruction
 
-- Install Go
+- Install Go and NodeJS
 - Run:
 
 ```bash
-go run .
+cd client && npm run build
+```
+
+```bash
+cd .. && go run .
 ```
 
 - Go to `<http://localhost:4200>' to visit the website

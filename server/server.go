@@ -13,6 +13,6 @@ func Run(serverPort string) {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello World!\n"))
 	})
-	log.Println("Serving Go server on http://localhost:" + serverPort)
+	log.Println("Serving Go server on http://localhost" + serverPort)
 	log.Fatal(http.ListenAndServe(serverPort, nil))
 }

@@ -1,5 +1,6 @@
 // import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+// import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Outlet, RouterProvider, createHashRouter } from 'react-router-dom';
 import About from '../page/About';
 import Home from '../page/Home';
 import Footer from './Footer';
@@ -31,7 +32,7 @@ const Router = () => {
 	// 	);
 	// };
 
-	const BrowserRoutes = createBrowserRouter([
+	const BrowserRoutes = createHashRouter([
 		{
 			path: '/',
 			element: <Layout />,

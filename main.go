@@ -23,7 +23,7 @@ func main() {
 
 func clientRun(config *config) {
 	fs := http.FileServer(http.Dir(config.ClientPath))
-	log.Println("Serving React client on http://localhost:" + config.ClientPort)
+	log.Println("Serving React client on http://localhost" + config.ClientPort)
 	log.Fatal(http.ListenAndServe(config.ClientPort, fs))
 }
 
