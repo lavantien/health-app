@@ -7,11 +7,13 @@
 - Time: 12-16 hours
 - No Authentication and Authorization of Users
 - No unit tests
-- Static Landing Page without login
-- Input Pages
-- Two Read-only Pages with buttons to redirect to their appropriate Input Pages
+- In-memory database with mockup data
 - 5 Endpoints: Users, Meals, Records, Exercises, Diaries
-- Each endpoint only needs Create and Read All actions
+- Each endpoint only needs Create, Read One, and Read All actions
+- But due to time limit only the User endpoints will be implemented
+- Static Landing Page (About)
+- Input Page (Register)
+- Home Page display all registered users
 
 ### Business Decisions
 
@@ -30,7 +32,7 @@
 
 ### Demo Instruction
 
-- Install Go and NodeJS
+- Install `Go` and `NodeJS`, also `jq` to prettify JSON outputs
 - Create an optimized build of the React client for Go server to serve:
 
 ```bash
@@ -44,6 +46,7 @@ cd .. && go run .
 ```
 
 - Go to `<http://localhost:4200>' to visit the website
+- Go to CURL Endpoints Documentation to test the backend endpoints
 
 ### Development Environment
 
@@ -64,4 +67,37 @@ cd .. && go run .
 
 ### Database Schemas
 
+![Database Schemas](./design/database/uml.png)
+
 ### CURL Endpoints Documentation
+
+#### User
+
+- Read All Users:
+
+```bash
+curl localhost:8080/users | jq
+```
+
+- Read a User given their `ID`:
+
+```bash
+curl localhost:8080/users/<ID> | jq
+```
+
+- Create a new User:
+
+```bash
+curl --request POST \
+--header 'content-type:application/json' \
+--data '{
+    "name": "Admin 2",
+    "password": "password",
+    "birthday": "1990-01-01",
+    "meals": [],
+    "records": [],
+    "exercises": [],
+    "diary": []
+  }' \
+localhost:8080/users | jq
+```
