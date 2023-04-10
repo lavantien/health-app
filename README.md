@@ -25,8 +25,7 @@
 - Database: In-memory
 - Communication: HTTP1.1 (REST Endpoints)
 - Backend: Go
-- Frontend: Remix React
-- Migration Service: Go
+- Frontend: React
 
 ### Demo
 
