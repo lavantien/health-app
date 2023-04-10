@@ -25,12 +25,17 @@
 ### Technical Decisions
 
 - Dev Env: Go, Node
+- CI/CD and Deployment: Render Cloud
 - Database: In-memory
 - Communication: HTTP1.1 (REST Endpoints)
 - Backend: Go
 - Frontend: React
 
-### Demo Instruction
+### Production Link
+
+- [REDACTED]
+
+### Local Demo Instruction
 
 - Install `Go` and `NodeJS`, also `jq` to prettify JSON outputs
 - Create an optimized build of the React client for Go server to serve:
