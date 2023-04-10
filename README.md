@@ -39,10 +39,14 @@
 cd client && npm run build
 ```
 
-- Run the Go server, which will serve both backend and frontend:
+- Build into one single binary and run the Go server, which will serve both backend and frontend:
 
 ```bash
-cd .. && go run .
+cd .. && go build
+```
+
+```bash
+./health-app
 ```
 
 - Go to `<http://localhost:4200>' to visit the website
