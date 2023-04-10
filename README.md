@@ -4,7 +4,7 @@
 
 ### Requirements Breakdown
 
-- Time: 12-16 hours
+- Time: 16 hours
 - No Authentication and Authorization of Users
 - No unit tests
 - In-memory database with mockup data
