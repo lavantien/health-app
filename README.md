@@ -1,5 +1,7 @@
 # Simple Health App
 
+Simple full-stack Health App written in Go and React
+
 ## System Overview
 
 ### Requirements Breakdown
