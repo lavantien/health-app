@@ -25,15 +25,10 @@
 ### Technical Decisions
 
 - Dev Env: Go, Node
-- CI/CD and Deployment: Render Cloud
 - Database: In-memory
 - Communication: HTTP1.1 (REST Endpoints)
 - Backend: Go
 - Frontend: React
-
-### Production Link
-
-- [REDACTED]
 
 ### Local Demo Instruction
 
@@ -47,11 +42,11 @@ cd client && npm run build
 - Build into one single binary and run the Go server, which will serve both backend and frontend:
 
 ```bash
-cd .. && go build
+cd .. && go build -o app
 ```
 
 ```bash
-./health-app
+./app
 ```
 
 - Go to `<http://localhost:4200>' to visit the website
