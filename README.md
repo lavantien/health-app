@@ -5,11 +5,11 @@
 ### Requirements Breakdown
 
 - Time: 12-16 hours
-- Authentication and Authorization of Users
+- No Authentication and Authorization of Users
 - Static Landing Page without login
 - Input Pages
 - Two Read-only Pages with buttons to redirect to their appropriate Input Pages
-- 4 Endpoints: Meals, Records, Exercises, Diaries
+- 5 Endpoints: Users, Meals, Records, Exercises, Diaries
 - Each endpoint only needs Create and Read All actions
 
 ### Business Decisions
@@ -21,22 +21,30 @@
 
 ### Technical Decisions
 
-- CI/CD: Git, GitHub Actions
-- Dev Env & Deployment: Docker, Podman, Docker Compose, AWS EC2
-- Database: MongoDB
+- Dev Env: Go, Node
+- Database: In-memory
 - Communication: HTTP1.1 (REST Endpoints)
 - Backend: Go
 - Frontend: Remix React
 - Migration Service: Go
 
-### Production Deployment
+### Demo
 
-- Link: [REDACTED]
+- Install Go
+- Run:
 
-### Local Development Environment Setup
+```bash
+go run .
+```
 
-- Install Docker and Docker Compose
-- Run docker-compose up
+- Go to `<http://localhost:4200>' to visit the website
+
+### Development Environment
+
+- Install Go and Node
+- Live editing React client by first go to the `client` directory and run `npm start` for hot reload, then go to `http://localhost:3000`
+- After make changes to the React client, go to the `client` directory and run `npm run build` to rebuild the client
+- Run Go server as normal, `go run .`
 
 ## Design Documents
 
