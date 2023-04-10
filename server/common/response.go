@@ -19,3 +19,7 @@ func ResponseWithJSON(w http.ResponseWriter, code int, data interface{}) {
 func ResponseWithError(w http.ResponseWriter, code int, message string) {
 	ResponseWithJSON(w, code, map[string]string{"error": message})
 }
+
+func EnableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+}

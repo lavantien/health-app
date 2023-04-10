@@ -18,6 +18,7 @@ type UserHandler struct {
 }
 
 func (uh *UserHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	common.EnableCors(&w)
 	switch r.Method {
 	case "GET":
 		uh.get(w, r)
