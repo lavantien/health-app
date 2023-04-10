@@ -31,11 +31,13 @@
 ### Demo Instruction
 
 - Install Go and NodeJS
-- Run:
+- Create an optimized build of the React client for Go server to serve:
 
 ```bash
 cd client && npm run build
 ```
+
+- Run the Go server, which will serve both backend and frontend:
 
 ```bash
 cd .. && go run .
