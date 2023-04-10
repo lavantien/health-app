@@ -6,6 +6,7 @@
 
 - Time: 12-16 hours
 - No Authentication and Authorization of Users
+- No unit tests
 - Static Landing Page without login
 - Input Pages
 - Two Read-only Pages with buttons to redirect to their appropriate Input Pages
@@ -27,7 +28,7 @@
 - Backend: Go
 - Frontend: React
 
-### Demo
+### Demo Instruction
 
 - Install Go
 - Run:
@@ -48,6 +49,12 @@ go run .
 ## Design Documents
 
 ### Business Logics
+
+#### Users
+
+- When creating User, will check if the name already existed
+- There currently no Auth for User endpoints
+- There currently no password encoding
 
 ### Database Schemas
 
